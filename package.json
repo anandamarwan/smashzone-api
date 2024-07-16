@@ -1,12 +1,23 @@
 {
   "name": "smashzone-api",
   "scripts": {
-    "dev": "bun run --hot src/index.ts"
+    "dev": "bun run --hot src/index.ts",
+    "start": "bun run src/index.ts"
   },
+  "module": "index.ts",
+  "type": "module",
   "dependencies": {
-    "hono": "^4.4.13"
+    "@prisma/client": "5.16.2",
+    "@types/node": "^20.14.10",
+    "hono": "^4.4.13",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.3"
   },
   "devDependencies": {
+    "prisma": "^5.16.2",
     "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
   }
 }
